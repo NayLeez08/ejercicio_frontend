@@ -1,0 +1,240 @@
+/* CONTENEDOR GENERAL */
+
+.contenedor{
+    display:flex;
+    min-height:100vh;
+    background:#ffffff;
+}
+
+.contenido{
+    flex:1;
+    padding:40px;
+}
+
+/* TITULO PRINCIPAL */
+
+.titulo{
+    text-align:center;
+    font-size:42px;
+    font-weight:900;
+    text-transform:uppercase;
+    letter-spacing:3px;
+    color:#1E3A8A;
+    margin-bottom:50px;
+    position:relative;
+}
+
+.titulo::after{
+    content:"";
+    display:block;
+    width:200px;
+    height:6px;
+    background:linear-gradient(
+        90deg,
+        #1E40AF,
+        #2563EB,
+        #60A5FA
+    );
+    margin:15px auto;
+    border-radius:20px;
+}
+
+/* DISTRIBUCION */
+
+.categoria-layout{
+    display:grid;
+    grid-template-columns:1fr 2fr;
+    gap:35px;
+}
+
+/* TARJETA FORMULARIO */
+
+.formulario{
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    border-top:6px solid #2563EB;
+    box-shadow:0 15px 30px rgba(0,0,0,.12);
+    transition:.3s;
+}
+
+.formulario:hover{
+    transform:translateY(-5px);
+}
+
+/* SUBTITULO */
+
+.subtitulo{
+    text-align:center;
+    color:#1E40AF;
+    font-size:28px;
+    font-weight:800;
+    margin-bottom:25px;
+    position:relative;
+}
+
+.subtitulo::after{
+    content:"";
+    display:block;
+    width:90px;
+    height:4px;
+    background:#2563EB;
+    margin:10px auto;
+    border-radius:20px;
+}
+
+/* LABELS */
+
+.formulario label{
+    display:block;
+    margin-top:15px;
+    margin-bottom:6px;
+    font-weight:bold;
+    color:#374151;
+}
+
+/* INPUTS */
+
+.formulario input{
+    width:100%;
+    padding:12px;
+    border:1px solid #d1d5db;
+    border-radius:10px;
+    outline:none;
+    transition:.3s;
+}
+
+.formulario input:focus{
+    border-color:#2563EB;
+    box-shadow:0 0 10px rgba(37,99,235,.25);
+}
+
+/* BOTONES */
+
+.botones{
+    margin-top:25px;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:12px;
+}
+
+.btn{
+    padding:12px;
+    border:none;
+    border-radius:10px;
+    color:white;
+    font-weight:bold;
+    cursor:pointer;
+    box-shadow:0 5px 12px rgba(0,0,0,.2);
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:scale(1.05);
+}
+
+.registrar{
+    background:#2563EB;
+}
+
+.eliminar{
+    background:#DC2626;
+}
+
+.modificar{
+    background:#F59E0B;
+}
+
+.consultar{
+    background:#059669;
+}
+
+/* CONTENEDOR TABLA */
+
+.tabla-container{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    border-top: 6px solid #2563EB ;
+    box-shadow:0 15px 30px rgba(0,0,0,.12);
+    overflow: hidden;
+}
+
+/* TITULO TABLA */
+
+.subtitulo-tabla{
+    text-align:center;
+    color:#1E40AF;
+    font-size:28px;
+    font-weight:800;
+    margin-bottom:25px;
+}
+
+.subtitulo-tabla::after{
+    content:"";
+    display:block;
+    width:90px;
+    height:4px;
+    background:#2563EB;
+    margin:10px auto;
+    border-radius:20px;
+}
+
+/* TABLA */
+
+.tabla{
+    width:100%;
+    border-collapse:collapse;
+    overflow:hidden;
+    border-radius:10px;
+}
+
+/* ENCABEZADO */
+
+.tabla th{
+    background:#4A76C6;
+    color:white;
+    padding:18px;
+    font-size:15px;
+    font-weight:bold;
+    border:1px solid #7EA0DE;
+    text-align:center;
+}
+
+/* CELDAS */
+
+.tabla td{
+    padding:18px;
+    text-align:center;
+    border:1px solid #8FAEE6;
+}
+
+/* FILAS ALTERNADAS */
+
+.tabla tr:nth-child(even){
+    background:#DCE6F7;
+}
+
+.tabla tr:nth-child(odd){
+    background:#FFFFFF;
+}
+
+/* EFECTO HOVER */
+
+.tabla tbody tr:hover{
+    background:#C8D8F5;
+    transition:0.2s;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:1000px){
+
+    .categoria-layout{
+        grid-template-columns:1fr;
+    }
+
+    .titulo{
+        font-size:30px;
+    }
+}

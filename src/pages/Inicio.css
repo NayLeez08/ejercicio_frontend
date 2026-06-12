@@ -1,0 +1,171 @@
+/* CONTENEDOR */
+
+.contenedor{
+    display:flex;
+    min-height:100vh;
+    background:#F4F7FC;
+}
+
+.contenido{
+    flex:1;
+    padding:35px;
+}
+
+/* HERO */
+
+.hero{
+    background:white;
+    border-radius:25px;
+    padding:50px;
+    text-align:center;
+    box-shadow:0 15px 30px rgba(0,0,0,.12);
+    border-top:8px solid #2563EB;
+    margin-bottom:35px;
+}
+
+.titulo{
+    font-size:65px;
+    font-weight:900;
+    color:#1E3A8A;
+    margin-bottom:10px;
+}
+
+.nombre-negocio{
+    font-size:42px;
+    color:#2563EB;
+    margin-bottom:15px;
+}
+
+.slogan{
+    font-size:18px;
+    letter-spacing:3px;
+    color:#6B7280;
+    text-transform:uppercase;
+}
+
+.slogan::after{
+    content:"";
+    display:block;
+    width:250px;
+    height:6px;
+    background:#2563EB;
+    margin:20px auto;
+    border-radius:20px;
+}
+
+/* DASHBOARD */
+
+.dashboard{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+    margin-bottom:35px;
+}
+
+.card-info{
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+    text-align:center;
+    transition:.3s;
+}
+
+.card-info:hover{
+    transform:translateY(-8px);
+}
+
+.icono{
+    font-size:55px;
+    margin-bottom:10px;
+}
+
+.card-info h2{
+    color:#1E3A8A;
+    margin-bottom:10px;
+}
+
+.card-info p{
+    color:#6B7280;
+}
+
+.productos{
+    border-top:6px solid #2563EB;
+}
+
+.categorias{
+    border-top:6px solid #F59E0B;
+}
+
+.proveedores{
+    border-top:6px solid #059669;
+}
+
+/* BIENVENIDA */
+
+.bienvenida{
+    background:white;
+    padding:50px;
+    border-radius:25px;
+    box-shadow:0 15px 30px rgba(0,0,0,.12);
+    margin-bottom:35px;
+
+    text-align:center;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.bienvenida-texto{
+    width:80%;
+    text-align: center;
+}
+
+.bienvenida-texto h2{
+    color:#1E40AF;
+    font-size:48px;
+    margin-bottom:25px;
+}
+
+.bienvenida-texto h2::after{
+    content:"";
+    display:block;
+    width:120px;
+    height:5px;
+    background:#2563EB;
+    margin:15px auto;
+    border-radius:20px;
+}
+
+.bienvenida-icono{
+    font-size:120px;
+}
+
+
+/* RESPONSIVE */
+
+@media(max-width:1000px){
+
+    .dashboard{
+        grid-template-columns:1fr;
+    }
+
+    .bienvenida{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .bienvenida-texto{
+        width:100%;
+    }
+
+    .titulo{
+        font-size:40px;
+    }
+
+    .nombre-negocio{
+        font-size:30px;
+    }
+}
