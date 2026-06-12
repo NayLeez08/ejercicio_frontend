@@ -1,5 +1,13 @@
+import Sidebar from "../components/Sidebar";
+
 function Inicio() {
-  return <h1>Inicio</h1>;
+    return (
+        <div>
+            <Sidebar />
+
+            <h1>Bienvenido</h1>
+        </div>
+    );
 }
 
 export default Inicio;
