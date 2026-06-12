@@ -1,3 +1,4 @@
+import { CardInfo } from "../components/inicioComponentes/CardInfo";
 import Sidebar from "../components/Sidebar";
 import "./Inicio.css";
 
@@ -28,47 +29,21 @@ function Inicio() {
 
                 <div className="dashboard">
 
-                    <div className="card-info productos">
+                    <CardInfo
+                        titulo="Productos"
+                        parrafo="Gestion y control de inventario"
 
-                        <div className="icono">
-                            📦
-                        </div>
+                    />
+                    <CardInfo
+                        titulo="Categorías"
+                        parrafo="Organización de productos"
 
-                        <h2>Productos</h2>
+                    />
+                    <CardInfo
+                        titulo="Proveedores"
+                        parrafo="Administración de proveedores"
 
-                        <p>
-                            Gestión y control de inventario
-                        </p>
-
-                    </div>
-
-                    <div className="card-info categorias">
-
-                        <div className="icono">
-                            📂
-                        </div>
-
-                        <h2>Categorías</h2>
-
-                        <p>
-                            Organización de productos
-                        </p>
-
-                    </div>
-
-                    <div className="card-info proveedores">
-
-                        <div className="icono">
-                            🚚
-                        </div>
-
-                        <h2>Proveedores</h2>
-
-                        <p>
-                            Administración de proveedores
-                        </p>
-
-                    </div>
+                    />
 
                 </div>
 
@@ -96,10 +71,6 @@ function Inicio() {
                     </div>
 
                 </div>
-
-                {/* INFORMACION */}
-
-               
 
             </div>
 
