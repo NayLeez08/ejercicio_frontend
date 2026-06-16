@@ -39,7 +39,7 @@
 .slogan{
     font-size:18px;
     letter-spacing:3px;
-    color:#6B7280;
+    color:#000000;
     text-transform:uppercase;
 }
 
@@ -77,28 +77,51 @@
 
 .icono{
     font-size:55px;
-    margin-bottom:10px;
+    margin-bottom:15px;
 }
+
+/* TÍTULOS Y TEXTO */
 
 .card-info h2{
     color:#1E3A8A;
     margin-bottom:10px;
+    font-size:30px;
 }
 
 .card-info p{
-    color:#6B7280;
+    color:#000000;
+    font-size:20px;
+    line-height:1.5;
 }
+
+/* PRODUCTOS */
 
 .productos{
     border-top:6px solid #2563EB;
 }
 
+.productos.icono svg{
+    color:#2563EB;
+}
+
+/* CATEGORÍAS */
+
 .categorias{
     border-top:6px solid #F59E0B;
 }
 
+.categorias.icono svg{
+    color:#F59E0B;
+}
+
+/* PROVEEDORES */
+
 .proveedores{
     border-top:6px solid #059669;
+}
+
+.proveedores .icono svg{
+    color:#000000;
 }
 
 /* BIENVENIDA */
@@ -120,12 +143,12 @@
 
 .bienvenida-texto{
     width:80%;
-    text-align: center;
+    text-align:center;
 }
 
 .bienvenida-texto h2{
     color:#1E40AF;
-    font-size:48px;
+    font-size:50px;
     margin-bottom:25px;
 }
 
@@ -139,10 +162,17 @@
     border-radius:20px;
 }
 
-.bienvenida-icono{
-    font-size:120px;
+.bienvenida-texto p{
+    color:#000000;
+    font-size:20px;
+    line-height:1.8;
+    margin-bottom:15px;
 }
 
+.bienvenida-icono{
+    font-size:120px;
+    color:#2563EB;
+}
 
 /* RESPONSIVE */
 
@@ -167,5 +197,13 @@
 
     .nombre-negocio{
         font-size:30px;
+    }
+
+    .bienvenida-texto h2{
+        font-size:32px;
+    }
+
+    .bienvenida-texto p{
+        font-size:16px;
     }
 }
