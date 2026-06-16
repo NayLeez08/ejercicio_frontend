@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react";
 import { obtenerProductos } from "../services/productoService";
 import Sidebar from "../components/Sidebar";
+import { BotonAccion } from "../components/BotonAccion";
+import { FaPlus, FaEdit, FaTrash, FaSearch } from "react-icons/fa";
 import "./Productos.css";
 
-function Productos() {
+function Productos() {//funciones de flecha
 
     const [productos, setProductos] = useState([]);
 
@@ -59,21 +61,29 @@ function Productos() {
 
                         <div className="botones">
 
-                            <button className="btn registrar">
-                                Registrar
-                            </button>
+                            <BotonAccion
+                                icono={<FaPlus />}
+                                texto="Registrar"
+                                clase="registrar"
+                            />
 
-                            <button className="btn eliminar">
-                                Eliminar
-                            </button>
+                            <BotonAccion
+                                icono={<FaTrash />}
+                                texto="Eliminar"
+                                clase="eliminar"
+                            />
 
-                            <button className="btn modificar">
-                                Modificar
-                            </button>
+                            <BotonAccion
+                                icono={<FaEdit />}
+                                texto="Modificar"
+                                clase="modificar"
+                            />
 
-                            <button className="btn consultar">
-                                Consultar
-                            </button>
+                            <BotonAccion
+                                icono={<FaSearch />}
+                                texto="Consultar"
+                                clase="consultar"
+                            />
 
                         </div>
 

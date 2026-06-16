@@ -1,10 +1,10 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:3000/api/productos";
+const API_URL = "http://localhost:3000/api";
 
 // Obtener todos los productos
 export const obtenerProductos = () => {
-    return axios.get(API_URL);
+    return axios.get(`${API_URL}/todos`);
 };
 
 // Obtener producto por ID

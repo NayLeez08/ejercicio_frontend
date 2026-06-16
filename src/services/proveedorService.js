@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:3000/api/proveedores";
+const API_URL = "http://localhost:3000/api";
 
 // Obtener todos los proveedores
 export const obtenerProveedores = () => {

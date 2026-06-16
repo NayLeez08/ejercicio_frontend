@@ -1,4 +1,5 @@
 import "./Sidebar.css";
+import {FaHome, FaBoxOpen, FaTags, FaTruck, FaCubes, } from "react-icons/fa";
 
 function Sidebar() {
     return (
@@ -7,7 +8,7 @@ function Sidebar() {
             <div className="sidebar-header">
 
                 <div className="logo">
-                    🏪
+                    <FaCubes />
                 </div>
 
                 <h2>
@@ -19,24 +20,26 @@ function Sidebar() {
             <nav className="menu">
 
                 <a href="/" className="menu-item">
-                    🏠 Inicio
+                    <FaHome />
+                    <span>Inicio</span>
                 </a>
 
                 <a href="/productos" className="menu-item">
-                    📦 Productos
+                    <FaBoxOpen />
+                    <span>Productos</span>
                 </a>
 
                 <a href="/categorias" className="menu-item">
-                    📂 Categorías
+                    <FaTags />
+                    <span>Categorías</span>
                 </a>
 
                 <a href="/proveedores" className="menu-item">
-                    🚚 Proveedores
+                    <FaTruck />
+                    <span>Proveedores</span>
                 </a>
 
             </nav>
-
-
 
         </div>
     );
