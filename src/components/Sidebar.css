@@ -1,5 +1,4 @@
 /* CONTENEDOR */
-
 .sidebar {
     width: 260px;
     min-height: 100vh;
@@ -17,7 +16,6 @@
 }
 
 /* ENCABEZADO */
-
 .sidebar-header {
     text-align: center;
     padding: 30px 20px 15px;
@@ -36,14 +34,12 @@
 }
 
 /* MENU */
-
 .menu {
     margin-top: 20px;
     padding: 0 15px;
 }
 
 /* OPCIONES */
-
 .menu-item {
     display: flex;
     align-items: center;
@@ -66,14 +62,12 @@
 }
 
 /* ICONOS */
-
 .menu-item svg {
     font-size: 22px;
     min-width: 22px;
 }
 
 /* COLORES DE LOS ICONOS */
-
 .menu-item:nth-child(1) svg {
     color: #ec6b6b;
 }
@@ -91,14 +85,12 @@
 }
 
 /* HOVER */
-
 .menu-item:hover {
     background: rgba(255, 255, 255, .15);
     transform: translateX(8px);
 }
 
 /* FOOTER */
-
 .sidebar-footer {
     margin-top: auto;
 
@@ -112,7 +104,6 @@
 }
 
 /* RESPONSIVE */
-
 @media(max-width:768px) {
 
     .sidebar {

@@ -3,11 +3,10 @@ import { Layout } from "../components/Layout";
 import { FaBoxOpen, FaTags, FaTruck } from "react-icons/fa";
 import "./Inicio.css";
 
-function Inicio() {
+const Inicio = () => {
     return (
         <Layout>
             {/* ENCABEZADO */}
-
             <div className="hero">
 
                 <h1 className="titulo">
@@ -21,7 +20,6 @@ function Inicio() {
             </div>
 
             {/* TARJETAS */}
-
             <div className="dashboard">
 
                 <CardInfo
@@ -48,7 +46,6 @@ function Inicio() {
             </div>
 
             {/* BIENVENIDA */}
-
             <div className="bienvenida">
                 <div className="bienvenida-texto">
                     <h2>
