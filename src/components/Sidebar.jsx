@@ -1,8 +1,5 @@
 import "./Sidebar.css";
-import {FaHome, FaBoxOpen, FaTags, FaTruck, FaCubes, } from "react-icons/fa";
-
-const Sidebar=()=> {
-import { FaHome, FaBoxOpen, FaTags, FaTruck, FaCubes, } from "react-icons/fa";
+import { FaHome, FaBoxOpen, FaTags, FaTruck, FaCubes } from "react-icons/fa";
 
 const Sidebar = () => {
     return (
@@ -46,7 +43,6 @@ const Sidebar = () => {
 
         </div>
     );
-}
-}
+};
 
-export default Sidebar
+export default Sidebar;
