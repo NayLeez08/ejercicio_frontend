@@ -12,3 +12,4 @@ export const CardInfo = ({ icono, titulo, parrafo, clase }) => {
         </div>
     )
 }
+

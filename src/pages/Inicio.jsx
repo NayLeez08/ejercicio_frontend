@@ -3,7 +3,7 @@ import { Layout } from "../components/Layout";
 import { FaBoxOpen, FaTags, FaTruck } from "react-icons/fa";
 import "./Inicio.css";
 
-const Inicio=()=> {
+const Inicio = () => {
     return (
         <Layout>
             {/* ENCABEZADO */}
@@ -70,7 +70,7 @@ const Inicio=()=> {
             </div>
 
         </Layout>
-    );
+    )
 }
 
-export default Inicio;
+export default Inicio
