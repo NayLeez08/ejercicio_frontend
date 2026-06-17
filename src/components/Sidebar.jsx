@@ -1,7 +1,7 @@
 import "./Sidebar.css";
 import {FaHome, FaBoxOpen, FaTags, FaTruck, FaCubes, } from "react-icons/fa";
 
-function Sidebar() {
+const Sidebar=()=> {
     return (
         <div className="sidebar">
 
